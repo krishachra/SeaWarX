@@ -1,4 +1,5 @@
-# 🚢 Battleship Game (React)
+# 🌊⚓ SeaWarX – Battleship Game (React)
+
 
 > A modern, interactive Battleship Game built using React.js with dynamic grid logic, real-time gameplay, and an AI-based opponent.
 
