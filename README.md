@@ -45,19 +45,34 @@ This project recreates the classic naval battle experience with a clean UI and s
 
 ## 🏗️ Project Structure
 
-battleship-game/
+SeaWarX/
 │
 ├── public/
 │
 ├── src/
-│   ├── components/
+│  ├── components/
+│   │   ├── Navbar.jsx
 │   │   ├── Board.jsx
 │   │   ├── Cell.jsx
 │   │   ├── GameStatus.jsx
+│   │   ├── Scoreboard.jsx
+│   │   └── Footer.jsx
 │   │
-│   ├── utils/
+│  ├── pages/
+│   │   ├── Home.jsx
+│   │   ├── Game.jsx
+│   │   ├── About.jsx
+│   │   └── HowToPlay.jsx
+│   │
+│  ├── utils/
 │   │   └── gameLogic.js
 │   │
-│   ├── App.jsx
-│   ├── App.css
-│   └── main.jsx
+│  ├── styles/
+│   │   ├── home.css
+│   │   ├── game.css     
+│   │   ├── navbar.css
+│   │   └── common.css
+│   │
+│  ├── App.jsx
+│  ├── App.css
+│  └── main.jsx
