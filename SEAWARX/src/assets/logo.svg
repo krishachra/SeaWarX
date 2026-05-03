@@ -1,0 +1,38 @@
+<svg width="240" height="70" viewBox="0 0 240 70" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="seaGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00eaff"></stop>
+      <stop offset="100%" stop-color="#0077ff"></stop>
+    </linearGradient>
+
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"></feGaussianBlur>
+      <feMerge>
+        <feMergeNode in="blur"></feMergeNode>
+        <feMergeNode in="SourceGraphic"></feMergeNode>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Logo Icon Box -->
+  <rect x="5" y="8" width="55" height="55" rx="14" fill="#020817" stroke="#00eaff" filter="url(#glow)"></rect>
+
+  <!-- Animated Waves -->
+  <path fill="#00eaff" opacity="0.8">
+    <animate attributeName="d" dur="2.5s" repeatCount="indefinite" values="
+        M10 42 Q18 34 26 42 T42 42 T58 42 V58 H10 Z;
+        M10 42 Q18 50 26 42 T42 42 T58 42 V58 H10 Z;
+        M10 42 Q18 34 26 42 T42 42 T58 42 V58 H10 Z
+      "></animate>
+  </path>
+
+  <!-- Ship -->
+  <rect x="18" y="32" width="28" height="8" fill="#ffffff"></rect>
+  <rect x="24" y="23" width="16" height="9" fill="#00eaff"></rect>
+  <rect x="30" y="17" width="5" height="6" fill="#ff3c3c"></rect>
+
+  <!-- Text -->
+  <text x="75" y="43" font-size="28" font-family="Arial, sans-serif" fill="url(#seaGlow)" font-weight="bold" filter="url(#glow)">
+    SeaWarX
+  </text>
+</svg>

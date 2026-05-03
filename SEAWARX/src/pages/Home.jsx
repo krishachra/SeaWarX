@@ -1,12 +1,13 @@
 import {Link} from "react-router-dom";
 import "../styles/home.css"
+import logo from "../assets/logo.svg";
 
 function Home() {
     return (
         <>
           <main className="home-page">
             <header className="header">
-              <div className="logo">🚢 SEAWARX</div>
+              <img src={logo} alt="SeaWarX Logo" className="logo" />
               <nav className="nav-bar">
                 <Link to="/">  Home</Link>
                 <Link to="/About">  About</Link>
