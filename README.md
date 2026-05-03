@@ -49,30 +49,32 @@ SeaWarX/
 │
 ├── public/
 │
-├── src/
+├── src/|
+│  ├── assets 
+│  │
 │  ├── components/
-│   │   ├── Navbar.jsx
-│   │   ├── Board.jsx
-│   │   ├── Cell.jsx
-│   │   ├── GameStatus.jsx
-│   │   ├── Scoreboard.jsx
-│   │   └── Footer.jsx
-│   │
+│  │   ├── Navbar.jsx
+│  │   ├── Board.jsx
+│  │   ├── Cell.jsx
+│  │   ├── GameStatus.jsx
+│  │   ├── Scoreboard.jsx
+│  │   └── Footer.jsx
+│  │
 │  ├── pages/
-│   │   ├── Home.jsx
-│   │   ├── Game.jsx
-│   │   ├── About.jsx
-│   │   └── HowToPlay.jsx
-│   │
+│  │   ├── Home.jsx
+│  │   ├── Game.jsx
+│  │   ├── About.jsx
+│  │   └── HowToPlay.jsx
+│  │
 │  ├── utils/
-│   │   └── gameLogic.js
-│   │
+│  │   └── gameLogic.js
+│  │
 │  ├── styles/
-│   │   ├── home.css
-│   │   ├── game.css     
-│   │   ├── navbar.css
-│   │   └── common.css
-│   │
+│  │   ├── home.css
+│  │   ├── game.css     
+│  │   ├── navbar.css
+│  │   └── common.css
+│  │
 │  ├── App.jsx
 │  ├── App.css
 │  └── main.jsx
