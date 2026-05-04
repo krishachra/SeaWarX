@@ -6,13 +6,13 @@ function About() {
 
   useEffect(() => {
     if (videoRef.current) {
-      videoRef.current.playbackRate = 0.75;
+      videoRef.current.playbackRate = 0.475;
     }
   }, []);
 
   return (
     <div className="about-page">
-      {/* Background Video */}
+     
       <video
         ref={videoRef}
         autoPlay
@@ -24,7 +24,7 @@ function About() {
         <source src="/videos/AboutBgVideo.mp4" type="video/mp4" />
       </video>
 
-      {/* Content */}
+     
       <div className="about-container">
         <h1>About SeaWarX</h1>
 

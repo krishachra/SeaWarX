@@ -1,7 +1,11 @@
+
 .about-page {
   position: relative;
   min-height: 100vh;
+  overflow-x: hidden;
+  font-family: "Orbitron", "Segoe UI", sans-serif;
 }
+
 
 .bg-video {
   position: fixed;
@@ -10,12 +14,65 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  z-index: -2;
+}
+
+.about-page::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(5, 10, 25, 0.75);
   z-index: -1;
 }
 
 .about-container {
-  position: relative;
-  z-index: 1;
-  color: white;
-  padding: 40px;
+  max-width: 900px;
+  margin: auto;
+  padding: 60px 20px;
+  color: #e0f7ff;
+  text-align: center;
+}
+
+
+.about-container h1 {
+  font-size: 3rem;
+  margin-bottom: 30px;
+  color: #00d4ff;
+  letter-spacing: 2px;
+  text-shadow: 0 0 10px rgba(0, 212, 255, 0.8);
+}
+
+
+.about-container p {
+  margin-bottom: 20px;
+  line-height: 1.7;
+  font-size: 1.05rem;
+  color: #ccefff;
+  text-shadow: 0 0 5px rgba(0, 150, 255, 0.3);
+}
+
+
+@keyframes glowPulse {
+  0% {
+    text-shadow: 0 0 5px rgba(0, 212, 255, 0.4);
+  }
+  50% {
+    text-shadow: 0 0 15px rgba(0, 212, 255, 0.9);
+  }
+  100% {
+    text-shadow: 0 0 5px rgba(0, 212, 255, 0.4);
+  }
+}
+
+.about-container h1 {
+  animation: glowPulse 3s infinite;
+}
+
+
+.about-container p:hover {
+  color: #ffffff;
+  transition: 0.3s ease;
 }
