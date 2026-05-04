@@ -6,14 +6,14 @@ function Home() {
     return (
         <>
           <main className="home-page">
-            <header className="header">
+            {/* <header className="header">
               <img src={logo} alt="SeaWarX Logo" className="logo" />
               <nav className="nav-bar">
                 <Link to="/">  Home</Link>
                 <Link to="/About">  About</Link>
                 <Link to="/HowToPlay">How to Play</Link>
               </nav>
-            </header>
+            </header> */}
             <section className="hero">
                 <h1 className="glow-head">BATTLESHIP</h1>
               <div className="game-title">

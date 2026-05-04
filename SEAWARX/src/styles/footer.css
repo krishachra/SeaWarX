@@ -1,0 +1,12 @@
+.footer {
+    background-color: #04061c;
+    color: aliceblue;
+    text-align: center;
+    padding: 22px;
+    bottom: 0px;
+    border-top: 1px solid rgba(56, 189, 248, 0.3);
+}
+
+.footer:hover {
+    background-color: #1d4ed8;
+}
