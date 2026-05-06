@@ -1,12 +1,65 @@
-.footer {
-    background-color: #04061c;
-    color: aliceblue;
-    text-align: center;
-    padding: 22px;
-    bottom: 0px;
-    border-top: 1px solid rgba(56, 189, 248, 0.3);
+.footer{
+  background: #04061c;
+  padding: 45px 8%;
+  border-top: 1px solid rgba(56, 189, 248, 0.25);
+  color: white;
 }
 
-.footer:hover {
-    background-color: #1d4ed8;
+.footercnt{
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+ 
+}
+
+.footerLft h2 {
+  color: #38bdf8;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  text-shadow: 0 0 12px #38bdf8;
+}
+
+.footerLft p {
+  max-width: 420px;
+  color: #9fb3c8;
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+.footerRght{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footerRght a {
+  color: #38bdf8;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footerRght a:hover {
+  color: white;
+  text-shadow: 0 0 8px #38bdf8;
+}
+
+.team-name {
+  margin-top: 35px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  text-align: center;
+  color: #6f8399;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .footercnt {
+    flex-direction: column;
+  }
+
+  .footerRght {
+    flex-direction: row;
+    gap: 20px;
+  }
 }
