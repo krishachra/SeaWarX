@@ -1,0 +1,87 @@
+.howtoplay-container {
+  min-height: 100vh;
+  padding: 60px 20px;
+  color: #e6f7ff;
+  font-family: "Orbitron", sans-serif;
+  background: linear-gradient(
+    to bottom,
+    rgba(4, 10, 24, 0.95),
+    rgba(0, 20, 40, 0.9)
+  );
+  text-align: center;
+}
+
+
+.howtoplay-container h1 {
+  font-size: 3rem;
+  margin-bottom: 40px;
+  color: #00d9ff;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-shadow:
+    0 0 5px #00d9ff,
+    0 0 15px #00d9ff;
+  animation: glow 3s infinite alternate;
+}
+
+
+.howtoplay-container h2 {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #4ddcff;
+  text-shadow: 0 0 8px rgba(0, 217, 255, 0.5);
+}
+
+
+.howtoplay-container p {
+  max-width: 900px;
+  margin: 0 auto 20px auto;
+  line-height: 1.8;
+  font-size: 1.05rem;
+  color: #d6ecff;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 15px 20px;
+  border-left: 3px solid #00d9ff;
+  border-radius: 10px;
+  backdrop-filter: blur(3px);
+  transition: all 0.3s ease;
+}
+
+
+.howtoplay-container p:hover {
+  transform: translateY(-3px);
+  background: rgba(255, 255, 255, 0.06);
+  box-shadow: 0 0 12px rgba(0, 217, 255, 0.2);
+}
+
+
+@keyframes glow {
+  from {
+    text-shadow:
+      0 0 5px #00d9ff,
+      0 0 10px #00d9ff;
+  }
+
+  to {
+    text-shadow:
+      0 0 10px #00d9ff,
+      0 0 25px #00d9ff;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .howtoplay-container h1 {
+    font-size: 2.2rem;
+  }
+
+  .howtoplay-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .howtoplay-container p {
+    font-size: 0.95rem;
+    padding: 12px 15px;
+  }
+}
